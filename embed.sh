@@ -8,8 +8,8 @@ while read a; do
 		curl -L https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js
 	elif echo "$a" | grep 'EMBED AUDIOPLAYER\.JS HERE' >/dev/null; then
 		cat ../pmidi/web/audioplayer.js
-	elif echo "$a" | grep 'EMBED FLORESTAN.ZIP HERE' >/dev/null; then
-		echo "florestanZip = \"data:application/zip;base64,`base64 -w0 ../pmidi/web/florestan.zip`\""
+	elif echo "$a" | grep 'EMBED EAWPATS.ZIP HERE' >/dev/null; then
+		echo "eawpatsZip = \"data:application/zip;base64,`base64 -w0 ../pmidi/web/eawpats.zip`\""
 	else
 		echo "$a"
 	fi
