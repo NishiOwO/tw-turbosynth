@@ -42,7 +42,7 @@
     loaded.TurboSynthWASM = TurboSynthWASM; // eslint-disable-line
   } else {
     loaded.TurboSynthWASM = await Scratch.external.evalAndReturn(
-      "https://raw.githubusercontent.com/pyrite-dev/pmidi/23c5cd71a270feddd52c266baf45efd33d22cc4c/web/turbosynthwasm.js",
+      "https://raw.githubusercontent.com/pyrite-dev/pmidi/9d43e38e479d9204b3f12df1203a63e2cfdf9ac2/web/turbosynthwasm.js",
       "TurboSynthWASM"
     );
   }
@@ -119,7 +119,7 @@
     loaded.AudioPlayer = AudioPlayer; // eslint-disable-line
   } else {
     loaded.AudioPlayer = await Scratch.external.evalAndReturn(
-      "https://raw.githubusercontent.com/pyrite-dev/pmidi/23c5cd71a270feddd52c266baf45efd33d22cc4c/web/audioplayer.js",
+      "https://raw.githubusercontent.com/pyrite-dev/pmidi/9d43e38e479d9204b3f12df1203a63e2cfdf9ac2/web/audioplayer.js",
       "AudioPlayer"
     );
   }
@@ -129,7 +129,7 @@
 
   if (!embedded) {
     eawpatsZip = await Scratch.external.dataURL(
-      "https://raw.githubusercontent.com/pyrite-dev/pmidi/23c5cd71a270feddd52c266baf45efd33d22cc4c/web/eawpats.zip"
+      "https://raw.githubusercontent.com/pyrite-dev/pmidi/9d43e38e479d9204b3f12df1203a63e2cfdf9ac2/web/eawpats.zip"
     );
   }
 
